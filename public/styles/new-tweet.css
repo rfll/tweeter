@@ -1,0 +1,17 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-character-count {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'bungee', cursive;
+}
+
+.tweet-button {
+  display: flex;
+  color: #ffffff;
+  background-color: #065980;
+
+}
