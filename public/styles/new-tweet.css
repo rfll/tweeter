@@ -1,10 +1,12 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .button-character-count {
   display: flex;
+  width: 200%;
   justify-content: space-between;
   font-family: 'bungee', cursive;
 }
@@ -13,5 +15,16 @@
   display: flex;
   color: #ffffff;
   background-color: #065980;
+}
 
+#tweet-text {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  width: 200%;
+  height: 35px;
 }
