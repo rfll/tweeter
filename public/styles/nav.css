@@ -3,12 +3,13 @@ nav {
   height: 120px;
   color: #ffffff;
   /* background-color: #4056a1; */
-  background-color: #065980;
+  /* background-color: #065980; */
+  background-color: #003f5c;
   padding: 1.5em;
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  top: 0px;
+  /* top: 0px; */
  }
 
  .navbar-left {
