@@ -1,18 +1,27 @@
+.write-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.write-tweet > h2 {
+  display: flex;
+  align-self: center;
+}
+
 .new-tweet {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .button-character-count {
   display: flex;
-  width: 200%;
   justify-content: space-between;
+  margin-top: 5px;
   font-family: 'bungee', cursive;
 }
 
 .tweet-button {
-  display: flex;
   color: #ffffff;
   background-color: #065980;
 }
@@ -25,6 +34,9 @@
   background-color: transparent;
   outline: none;
   padding: 0;
-  width: 200%;
   height: 35px;
+}
+
+.negative-counter {
+  color: red;
 }
