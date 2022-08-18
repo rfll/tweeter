@@ -21,6 +21,7 @@ nav {
  .navbar-right {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
  }
 
  .write-bold {
