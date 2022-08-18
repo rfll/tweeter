@@ -2,32 +2,38 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  border: 2px solid black;
-  padding: 20px;
+  /* padding: 20px; */
   margin-bottom: 10px;
   width: 90%;
 }
 
-#tweets-section:hover {
+article.tweet {
+  border: 2px solid black;
+  margin-bottom: 3em;
+  padding: 20px;
+}
+
+article.tweet:hover {
   box-shadow: 4px 4px black;
 }
 
-header {
+article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  /* padding: 10px; */
+}
+
+article.tweet header img {
+  margin-right: 10px;
 }
 
 #user-avatar {
-  justify-content: space-around;
-}
-
-#handle {
   display: flex;
+  flex-direction: row;
 }
 
-article {
+#tweet-body {
   border-bottom: 2px solid black;
   padding: 10px;
 }
@@ -35,7 +41,7 @@ article {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  /* padding: 10px; */
   font-size: medium;
 }
 
