@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   const createTweetElement = function(tweetData) {
     const $tweet =
-      $(`<article class="tweet">
+      $(`<article class="tweet-box">
           <header>
             <div id="user-avatar">
               <img src=${(escape(tweetData.user.avatars))}>
@@ -39,9 +39,9 @@ $(document).ready(function () {
           <footer>
             <div>${timeago.format(escape(tweetData.created_at))}</div>
             <div>
-              <i class="fa-solid fa-flag flag"></i>
-              <i class="fa-solid fa-retweet retweet"></i>
-              <i class="fa-solid fa-heart heart"></i>
+              <i class="fa-solid fa-flag flag-icon"></i>
+              <i class="fa-solid fa-retweet retweet-icon"></i>
+              <i class="fa-solid fa-heart heart-icon"></i>
             </div>
           </footer>
               </article>`
@@ -60,12 +60,16 @@ $(document).ready(function () {
   $(".new-tweet").on("submit", function(event) {
     event.preventDefault();
 
+    $("#error").slideUp();
+
     if ($("#tweet-text").val().length === 0) {
-      alert("You must write a tweet to post!");
+      // alert("You must write a tweet to post!");
+      $("#error").text("Please type something to post a tweet!").slideDown();
       return;
     }
     if ($("#tweet-text").val().length > 140) {
-      alert("Tweets must be less than 140 characters.");
+      // alert("Tweets must be less than 140 characters.");
+      $("#error").text("Tweets must be less than 140 characters!").slideDown();
       return;
     }
     $.ajax('/tweets', { method: 'POST', data: $(this).serialize()})
