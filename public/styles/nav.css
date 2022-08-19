@@ -2,7 +2,6 @@
   display: flex;
   height: 120px;
   color: #ffffff;
-  /* background-color: #4056a1; */
   background-color: #003f5c;
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   padding: 1.5em;
@@ -10,25 +9,25 @@
   width: 100%;
   position: fixed;
   top: 0px;
- }
+}
 
- .navbar-left {
+.navbar-left {
   font-family: 'Bungee', cursive;
   font-size: 32px;
   align-self: flex-end;
- }
+}
 
- .navbar-right {
+.navbar-right {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
- }
+}
 
- .write-bold {
+.write-bold {
   font-weight: 600;
- }
+}
 
- .arrow-icon {
+.arrow-icon {
   color: red;
   align-self: center;
- }
+}
