@@ -1,4 +1,4 @@
-body > header {
+#user {
   display: flex;
   height: 400px;
   width: 100%;
@@ -10,7 +10,3 @@ body > header {
   background-color: #003f5c;
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
-
-/* .header-name {
-  padding: 0px;
-}  */
