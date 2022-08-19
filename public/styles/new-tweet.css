@@ -4,26 +4,9 @@
   width: 90%;
 }
 
-.write-tweet > h2 {
-  display: flex;
-  align-self: center;
-}
-
 .new-tweet {
   display: flex;
   flex-direction: column;
-}
-
-.button-character-count {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-  font-family: 'bungee', cursive;
-}
-
-.tweet-button {
-  color: #ffffff;
-  background-color: #065980;
 }
 
 #tweet-text {
@@ -35,8 +18,38 @@
   outline: none;
   padding: 0;
   height: 35px;
+  font-size: larger;
+}
+
+.button-character-count {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-family: 'bungee', cursive;
+  font-size: larger;
+}
+
+.tweet-button {
+  color: #ffffff;
+  background-color: #065980;
+  padding: 4px;
+}
+
+.counter {
+  padding: 4px;
 }
 
 .negative-counter {
   color: red;
+}
+
+#error {
+  align-self: center;
+  font-size: larger;
+  font-weight: 600;
+  color: red;
+  padding: 1rem;
+  border: 2px solid red;
+  display: none;
+  margin: 1rem;
 }
