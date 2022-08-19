@@ -16,7 +16,7 @@
   box-shadow: 4px 4px black;
 }
 
-.tweet-box > header {
+.tweet-box>header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   flex-direction: row;
 }
 
-#user-avatar > img {
+#user-avatar>img {
   margin-right: 10px;
 }
 
@@ -36,7 +36,7 @@
   padding: 10px;
 }
 
-.tweet-box > footer {
+.tweet-box>footer {
   display: flex;
   justify-content: space-between;
   font-size: larger;
