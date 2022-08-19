@@ -5,27 +5,21 @@
  */
 
 
-$(document).ready(function () {
+$(document).ready(function() {
   // Test / driver code (temporary). Eventually will get this from the server.
   // Fake data taken from initial-tweets.json
 
-
-  const renderTweets = function (tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
-
-    // Empty tweets so they don't post twice
+  const renderTweets = function(tweets) {
+    // Empty tweets container so they don't post twice
     $('#tweets-section').html("");
 
+    // Loop through tweets and post in descending order
     for (let tweet of tweets) {
-      // console.log(createTweetElement(tweet));
-      // console.log("hello");
       $('#tweets-section').prepend(createTweetElement(tweet));
     }
-    
-  }
+  };
 
+  // Use jQuery to post tweets to page
   const createTweetElement = function(tweetData) {
     const $tweet =
       $(`<article class="tweet-box">
@@ -46,45 +40,39 @@ $(document).ready(function () {
           </footer>
               </article>`
       );
-
-    // Test / driver code (temporary)
-    // console.log($tweet); // to see what it looks like
-    // return $('#tweets-section').append($tweet);
     return $tweet;
   };
 
-  // createTweetElement(data);
-  // renderTweets(data);
-
-
+  // Post new tweet function
   $(".new-tweet").on("submit", function(event) {
     event.preventDefault();
 
+    // Remove error message when posting a valid tweet
     $("#error").slideUp();
 
+    // Errors if tweet is 0 or more than 140 characters
     if ($("#tweet-text").val().length === 0) {
-      // alert("You must write a tweet to post!");
       $("#error").text("Please type something to post a tweet!").slideDown();
       return;
     }
     if ($("#tweet-text").val().length > 140) {
-      // alert("Tweets must be less than 140 characters.");
       $("#error").text("Tweets must be less than 140 characters!").slideDown();
       return;
     }
     $.ajax('/tweets', { method: 'POST', data: $(this).serialize()})
-    .then(loadTweets);
+      .then(loadTweets);
   });
 
 
   const loadTweets = function() {
     $.ajax('/tweets', { method: 'GET' })
-    .then(renderTweets);
-  }
+      .then(renderTweets);
+  };
 
   loadTweets();
 
-  const escape = function (str) {
+  // Function to pass to createTweetElement for safe user input
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
