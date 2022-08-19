@@ -2,30 +2,24 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  /* padding: 20px; */
   margin-bottom: 10px;
   width: 90%;
 }
 
-article.tweet {
+.tweet-box {
   border: 2px solid black;
   margin-bottom: 3em;
   padding: 20px;
 }
 
-article.tweet:hover {
+.tweet-box:hover {
   box-shadow: 4px 4px black;
 }
 
-article.tweet header {
+.tweet-box > header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding: 10px; */
-}
-
-article.tweet header img {
-  margin-right: 10px;
 }
 
 #user-avatar {
@@ -33,26 +27,29 @@ article.tweet header img {
   flex-direction: row;
 }
 
+#user-avatar > img {
+  margin-right: 10px;
+}
+
 #tweet-body {
   border-bottom: 2px solid black;
   padding: 10px;
 }
 
-footer {
+.tweet-box > footer {
   display: flex;
   justify-content: space-between;
-  /* padding: 10px; */
-  font-size: medium;
+  font-size: larger;
 }
 
-.flag:hover {
+.flag-icon:hover {
   color: red;
 }
 
-.retweet:hover {
+.retweet-icon:hover {
   color: red;
 }
 
-.heart:hover {
+.heart-icon:hover {
   color: red;
 }
