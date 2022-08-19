@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  // Tweet input character counter
   $("#tweet-text").on('keyup', function(e) {
     let counter = $(this).val().length;
     let subtract = 140 - counter;
@@ -11,5 +11,5 @@ $(document).ready(function() {
     } else {
       $('.counter').removeClass('negative-counter');
     }
-  })
+  });
 });
