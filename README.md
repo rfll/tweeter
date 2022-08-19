@@ -4,6 +4,13 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
+## Screenshots
+
+!["Desktop tweeter"](https://github.com/rfll/tweeter/blob/master/docs/Desktop_Tweeter2.png)
+!["Desktop tweeter error"](https://github.com/rfll/tweeter/blob/master/docs/Tweeter_error_message.png)
+!["Tablet tweeter"](https://github.com/rfll/tweeter/blob/master/docs/Tablet_Tweeter.png)
+!["Mobile tweeter"](https://github.com/rfll/tweeter/blob/master/docs/Mobile_Tweeter.png)
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
