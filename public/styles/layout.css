@@ -20,7 +20,6 @@ body {
   align-items: center;
   color: #545149;
   background-color: #f4f1ec;
-  /* font-size: 24px; */
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -34,5 +33,65 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #f4f1ec;
-
+  margin-top: 60px;
  }
+
+@media (min-width: 1025px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    font-size: 110%;
+  }
+  nav#navbar {
+    background-color: #003f5c;
+    background-image: none;
+  }
+  header#user {
+    width: 35%;
+    align-self: flex-start;
+    margin-top: 150px;
+    margin-left: 20px;
+    position: fixed;
+  }
+  .container {
+    width: 65%;
+    margin-top: 150px;
+    margin-left: 37%;
+  }
+  #user-avatar > img {
+    max-width: 67px;
+    max-height: 67px;
+  }
+  #user-avatar > h3 {
+    white-space: nowrap;
+  }
+  .tweet-box > header {
+    font-size: 110%;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 1024px) {
+  #user-avatar > img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .tweet-box > header {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 428px) {
+  nav#navbar {
+    font-size: 90%;
+  }
+  .tweet-box {
+    font-size: 85%;
+  }
+  #user-avatar > img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  #tweet-body {
+    margin-top: 0%;
+  }
+}
