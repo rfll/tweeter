@@ -61,6 +61,10 @@ $(document).ready(function() {
     }
     $.ajax('/tweets', { method: 'POST', data: $(this).serialize()})
       .then(loadTweets);
+
+    // Reset text input and counter on submit  
+    $("#tweet-text").val('');
+    $(".counter").val(140);
   });
 
 
